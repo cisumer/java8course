@@ -1,8 +1,8 @@
 package java8test.date;
 
 import java.time.LocalDate;
+import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
-import java.util.Calendar;
 import java.util.Date;
 
 public class DateDemo {
@@ -15,5 +15,9 @@ public class DateDemo {
 	System.out.println(now_l.getDayOfMonth());
 	
 	System.out.println(now_l.plusDays(-2));
+	System.out.println(LocalDateTime.now().format(DateTimeFormatter.ofPattern("yyyy-MM-dd HH:mm:ss")));
+
+	LocalDateTime.parse("2019-12-02T20:18:23");
     }
+    
 }
